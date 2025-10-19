@@ -1,17 +1,17 @@
 # Git Commands
 
-Git cheatsheet
+Common Git commands.
 
 Git Cheatsheet
 ------------------------
-Before editting any file, ensure the local repo is synchronized with the remote:
+Before editing any file, ensure the local repo is synchronized with the remote:
 
 ~~~
 git pull
 git status
 ~~~
 
-After editting an existing file, and after testing out any changes you made,
+After editing an existing file, and after testing out any changes you made,
 synchronize it with the remote repo:
 
 ~~~
@@ -57,7 +57,7 @@ git move <filename> <new-filename>
 
 <br><br>
 __________
-###### Markdown syntax used in this README.md file:
+###### Markdown syntax used in this file:
 * [CommonMark Spec](https://spec.commonmark.org/0.30/)
 * [Standard Markdown Reference](https://daringfireball.net/projects/markdown/syntax)
 * [GitLab Flavored Markdown Reference](https://docs.gitlab.com/ee/user/markdown.html)
