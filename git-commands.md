@@ -6,10 +6,10 @@ Git Cheatsheet
 ------------------------
 Before editting any file, ensure the local repo is synchronized with the remote:
 
-  ~~~
-  git pull
-  git status
-  ~~~
+~~~
+git pull
+git status
+~~~
 
 After editting an existing file, and after testing out any changes you made,
 synchronize it with the remote repo:
