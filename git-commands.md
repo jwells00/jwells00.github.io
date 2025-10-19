@@ -14,46 +14,46 @@ git status
 After editting an existing file, and after testing out any changes you made,
 synchronize it with the remote repo:
 
-  ~~~
-  git commit -a -m "<change description>."
-  git push
-  git status
-  ~~~
+~~~
+git commit -a -m "<change description>."
+git push
+git status
+~~~
 
 After creating a new file, and after completing any necessary testing,synchronize
 it with the remote repo:
 
-  ~~~
-  git add .
-  git commit -m "<change description>."
-  git push
-  git status
-  ~~~
+~~~
+git add .
+git commit -m "<change description>."
+git push
+git status
+~~~
 
 If you want to keep a local backup copy of a file before changing it (for example
 the "dental_servers.dat" file), and you don't want the change tracked by git, doi
 this:
 
-  ~~~
-  bk dental_servers.dat
-  mv dental_servers.dat.YYMMDD archive_pastebin
-  vi dental_servers.dat
-  ...
-  git add .
-  git commit -m "Adjusted server list in dental_servers.dat."
-  ~~~
+~~~
+bk dental_servers.dat
+mv dental_servers.dat.YYMMDD archive_pastebin
+vi dental_servers.dat
+...
+git add .
+git commit -m "Adjusted server list in dental_servers.dat."
+~~~
 
 To delete a file that is currently being tracked in git:
 
-  ~~~
-  git rm <filename>
-  ~~~
+~~~
+git rm <filename>
+~~~
 
 To rename a file that is currently being tracked in git:
 
-  ~~~
-  git move <filename> <new-filename>
-  ~~~
+~~~
+git move <filename> <new-filename>
+~~~
 
 <br><br>
 __________
