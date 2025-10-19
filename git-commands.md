@@ -20,7 +20,7 @@ git push
 git status
 ~~~
 
-After creating a new file, and after completing any necessary testing,synchronize
+After creating a new file, and after completing any necessary testing, synchronize
 it with the remote repo:
 
 ~~~
@@ -31,16 +31,17 @@ git status
 ~~~
 
 If you want to keep a local backup copy of a file before changing it (for example
-the "dental_servers.dat" file), and you don't want the change tracked by git, doi
-this:
+the "myservers.dat" file), and you don't want the change tracked by git, do
+this (assumes there is an "archive_pastebin" directory and it has been added to
+the .gitignore file):
 
 ~~~
-bk dental_servers.dat
-mv dental_servers.dat.YYMMDD archive_pastebin
-vi dental_servers.dat
+bk myservers.dat
+mv myservers.dat.YYMMDD archive_pastebin
+vi myservers.dat
 ...
 git add .
-git commit -m "Adjusted server list in dental_servers.dat."
+git commit -m "Adjusted server list in myservers.dat."
 ~~~
 
 To delete a file that is currently being tracked in git:
