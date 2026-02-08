@@ -1,6 +1,6 @@
 # Plain-Text Markdown Cheat Sheet
 
-This guide highlights Markdown syntax that remains legible in raw text editors while rendering perfectly on a GitHub Pages site.
+This guide highlights Markdown syntax that remains legible in raw text editors.
 
 ---
 
