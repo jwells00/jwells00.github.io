@@ -2,12 +2,12 @@
 
 For quick, readable notes that still look clean in a plain text editor, the best Markdown subset focuses on structure over complex formatting. The goal is to avoid heavy, noisy markup like HTML or excessive symbols. 
 
-Here is a recommended, highly readable subset:
+Here is a recommended, highly readable subset that follows [GitHub syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax):
 
 ---
 
 ## 1. Structure & Headers
-Use ATX-style headers (hashes) for hierarchy. They are clear and easy to skim.
+Use hashes for header hierarchy. They are clear and easy to skim.
 # Level 1 (Title)
 ## Level 2 (Section)
 ### Level 3 (Subsection)
@@ -43,23 +43,35 @@ Lists in Markdown are naturally readable.  You can use hyphens (-), asterisks (*
 ~~~
 
 ### Ordered List
-1) Use a number followed by a ")" or "." to start a an ordered list.
-2) Blah
+1. Use a number followed by a period and space to start a an ordered list.
+2. Blah
    * You can also next unordered lists
    * Blah
-3) Blah
+3. Blah
    a) Or you can nest ordered lists
    b) Blah
+4. Blah
+    a) Or you can nest ordered lists
+    b) Blah
+5. Blah
+    a. Or you can nest ordered lists
+    b. Blah
 
 **Markup:**
 ~~~
-1) Use a number followed by a ")" or "." to start a an ordered list.
-2) Blah
+1. Use a number followed by a period and space to start a an ordered list.
+2. Blah
    * You can also next unordered lists
    * Blah
-3) Blah
+3. Blah
    a) Or you can nest ordered lists
    b) Blah
+4. Blah
+    a) Or you can nest ordered lists
+    b) Blah
+5. Blah
+    a. Or you can nest ordered lists
+    b. Blah
 ~~~
 
 ---
