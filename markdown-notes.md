@@ -45,33 +45,25 @@ Lists in Markdown are naturally readable.  You can use hyphens (-), asterisks (*
 ### Ordered List
 1. Use a number followed by a period and space to start a an ordered list.
 2. Blah
-   * You can also next unordered lists
+   * You can also nest unordered lists
    * Blah
 3. Blah
-   a) Or you can nest ordered lists
-   b) Blah
+   1. Or you can nest ordered lists
+   2. Blah
 4. Blah
-    a) Or you can nest ordered lists
-    b) Blah
 5. Blah
-    a. Or you can nest ordered lists
-    b. Blah
 
 **Markup:**
 ~~~
 1. Use a number followed by a period and space to start a an ordered list.
 2. Blah
-   * You can also next unordered lists
+   * You can also nest unordered lists
    * Blah
 3. Blah
-   a) Or you can nest ordered lists
-   b) Blah
+   1. Or you can nest ordered lists
+   2. Blah
 4. Blah
-    a) Or you can nest ordered lists
-    b) Blah
 5. Blah
-    a. Or you can nest ordered lists
-    b. Blah
 ~~~
 
 ---
