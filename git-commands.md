@@ -11,21 +11,23 @@ Before editing any file, ensure the local repo is synchronized with the remote:
   git status
   ~~~
 
-After editing an existing file, and after testing out any changes you made,
+After editing an ***existing*** file, and after testing out any changes you made,
 synchronize it with the remote repo:
 
   ~~~
-  git commit -a -m "<change description>."
+  vi myscript.sh
+  git commit -m "<Change description>." myscript.sh
   git push
   git status
   ~~~
 
-After creating a new file, and after completing any necessary testing, synchronize
+After creating a ***new*** file, and after completing any necessary testing, synchronize
 it with the remote repo:
 
   ~~~
-  git add myscript.sh
-  git commit -m "Initial creation." myscript.sh
+  vi mynewscript.sh
+  git add mynewscript.sh
+  git commit -m "Initial creation." mynewscript.sh
   git push
   git status
   ~~~
@@ -56,8 +58,8 @@ To rename a file that is currently being tracked in git:
   git move <filename> <new-filename>
   ~~~
 
-To prevent a file from be tracked by   git (data files, password vaults, etc.),
-append it to the .gitignore file and confirm   git ignores it:
+To prevent a file from be tracked by git (data files, password vaults, etc.),
+append it to the .gitignore file and confirm git ignores it:
 
   ~~~
   # Update .gitignore file
