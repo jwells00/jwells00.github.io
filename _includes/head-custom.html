@@ -1,23 +1,26 @@
-<!-- Load Mermaid -->
+<!-- Load Mermaid CDN -->
 <script type="module">
-  import mermaid from 'https://jsdelivr.net';
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   
-  // Wait for the DOM to load, then convert Jekyll code blocks to Mermaid divs
-  document.addEventListener("DOMContentLoaded", function() {
+  // 1. Initialize with startOnLoad: false so it doesn't look for tags prematurely
+  mermaid.initialize({ startOnLoad: false });
+
+  document.addEventListener("DOMContentLoaded", async function() {
     const codeBlocks = document.querySelectorAll("pre code.language-mermaid");
     
+    // 2. Loop through and replace Kramdown's tags with Mermaid-friendly divs
     codeBlocks.forEach(function(block) {
-      // Create a new div element
       const div = document.createElement("div");
       div.className = "mermaid";
       div.textContent = block.textContent;
       
-      // Find the parent <pre> element and replace it with our new <div>
       const pre = block.parentElement;
       pre.parentElement.replaceChild(div, pre);
     });
 
-    // Initialize Mermaid now that the elements are correctly structured
-    mermaid.initialize({ startOnLoad: true });
+    // 3. Explicitly tell Mermaid to run now that the DOM elements match perfectly
+    await mermaid.run({
+      nodes: document.querySelectorAll('.mermaid')
+    });
   });
 </script>
