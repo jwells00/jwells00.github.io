@@ -52,3 +52,7 @@ flowchart LR
     linkStyle 9 stroke:#cc0000,stroke-width:2px,fill:none
     linkStyle 10 stroke:#cc0000,stroke-width:2px,fill:none
 ```
+### (Mermaid version)
+```mermaid
+  info
+```
