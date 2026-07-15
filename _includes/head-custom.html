@@ -3,7 +3,16 @@
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   
   // 1. Initialize with startOnLoad: false so it doesn't look for tags prematurely
-  mermaid.initialize({ startOnLoad: false });
+  // 2: Explicitly set theme to one of the primary built-in ones available:
+  // - default: The standard look (usually light green/blue boxes).
+  // - dark: A high-contrast dark palette tailored for dark-themed websites.
+  // - neutral: A minimalist gray/black palette that blends beautifully with clean, academic, or professional technical documentation.
+  // - forest: A earthy palette featuring shades of green.
+  // - base: A completely flat, unstyled theme designed for developers who want to write their own CSS from scratch.
+  mermaid.initialize({ 
+    startOnLoad: false,
+    theme: 'neutral'
+  });
 
   document.addEventListener("DOMContentLoaded", async function() {
     const codeBlocks = document.querySelectorAll("pre code.language-mermaid");
