@@ -1,0 +1,2 @@
+# Explicitly define a theme (the "primer" theme matches GitHub's classic native look).
+theme: jekyll-theme-primer
